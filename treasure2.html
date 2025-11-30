@@ -73,21 +73,31 @@
     }
 
     button {
-      background: #fff;
-      color: #b30000;
-      padding: 14px 26px;
-      border: none;
-      border-radius: 30px;
-      cursor: pointer;
-      font-size: 1.1rem;
-      font-weight: bold;
-      transition: 0.3s;
-    }
+  background: #fff;
+  color: #b30000;
+  padding: 14px 26px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  font-weight: bold;
 
-    button:hover {
-      background: #ffe6e6;
-      transform: scale(1.05);
-    }
+  /* NEW: glow + shadows */
+  box-shadow: 0 0 15px rgba(255, 200, 200, 0.6),
+              0 0 30px rgba(255, 80, 80, 0.4);
+  transition: 0.3s ease, box-shadow 0.4s ease;
+}
+
+button:hover {
+  background: #ffe6e6;
+  transform: scale(1.05);
+
+  /* NEW: stronger glow on hover */
+  box-shadow: 0 0 20px rgba(255, 220, 220, 0.9),
+              0 0 40px rgba(255, 100, 100, 0.7),
+              0 0 55px rgba(255, 150, 150, 0.8);
+}
+
 
     footer {
       text-align: center;
@@ -117,8 +127,8 @@
 </head>
 <body>
      <header>
-    <h1>🎄 CMS Christmas treasure hunt 🎁</h1>
-    <p>Hosted by the CMS</p>
+    <h1>🎄 Student Learning Community Christmas Treasure Hunt 🎁</h1>
+    <p>Hosted by the Student Learning Community</p>
   </header>
   <div class="container">
     <h1>🎄 Puzzle 2 🎄</h1>
@@ -126,18 +136,15 @@
 
     <div class="card">
       <p class="hint">
-        Subtle Hint: "Santa’s helpers need a place
-to warm their cocoa, just in case.
-Where cookies bake and kettles sing,
-your next clue waits by pots and things.." 🎁
+        Subtle Hint: "Look for the place where futures are shaped, and pathways begin — a warm corner where students explore what's next." 🎁
       </p>
     </div>
 
-    <button onclick="window.location.href='https://crosswordlabs.com/embed/slc-treasure-hunt'">Go to Next Puzzle ➜</button>
+    <button onclick="window.location.href='puzzle3.html'">Go to Next Puzzle ➜</button>
   </div>
 
   <footer>
-    <p>© 2025 CMS | All Rights Reserved</p>
+    <p>© 2025 Student Learning Community | All Rights Reserved</p>
   </footer>
   
   <script>
@@ -157,5 +164,3 @@ your next clue waits by pots and things.." 🎁
   </script>
 </body>
 </html>
-
-
